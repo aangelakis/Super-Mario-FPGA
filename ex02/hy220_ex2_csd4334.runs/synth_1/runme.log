@@ -1,0 +1,345 @@
+
+*** Running vivado
+    with args -log vga_maze_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_maze_top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source vga_maze_top.tcl -notrace
+Command: synth_design -top vga_maze_top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5056 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1449.055 ; gain = 65.926 ; free physical = 1893 ; free virtual = 30140
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'vga_maze_top' [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/imports/hw2_code/vga_maze_top.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.runs/synth_1/.Xil/Vivado-5039-moe/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.runs/synth_1/.Xil/Vivado-5039-moe/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/imports/vga_sync/vga_sync.sv:15]
+	Parameter FRAME_HPIXELS bound to: 640 - type: integer 
+	Parameter FRAME_HFPORCH bound to: 16 - type: integer 
+	Parameter FRAME_HSPULSE bound to: 96 - type: integer 
+	Parameter FRAME_HBPORCH bound to: 48 - type: integer 
+	Parameter FRAME_MAX_HCOUNT bound to: 800 - type: integer 
+	Parameter FRAME_VLINES bound to: 480 - type: integer 
+	Parameter FRAME_VFPORCH bound to: 10 - type: integer 
+	Parameter FRAME_VSPULSE bound to: 2 - type: integer 
+	Parameter FRAME_VBPORCH bound to: 29 - type: integer 
+	Parameter FRAME_MAX_VCOUNT bound to: 521 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (2#1) [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/imports/vga_sync/vga_sync.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'vga_frame' [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/imports/hw2_code/vga_frame.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'vga_frame' (3#1) [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/imports/hw2_code/vga_frame.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'vga_maze_top' (4#1) [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/imports/hw2_code/vga_maze_top.sv:15]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_col[9]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_col[8]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_col[7]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_col[6]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_col[5]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_col[4]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_col[3]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_col[2]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_col[1]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_col[0]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_row[9]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_row[8]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_row[7]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_row[4]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_row[3]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_row[2]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_row[1]
+WARNING: [Synth 8-3331] design vga_frame has unconnected port i_row[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1494.805 ; gain = 111.676 ; free physical = 1906 ; free virtual = 30152
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1494.805 ; gain = 111.676 ; free physical = 1905 ; free virtual = 30152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1494.805 ; gain = 111.676 ; free physical = 1905 ; free virtual = 30152
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_25_inst'
+Finished Parsing XDC File [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_25_inst'
+Parsing XDC File [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/constrs_1/imports/hw2_code/vga_maze.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/constrs_1/imports/hw2_code/vga_maze.xdc:14]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/constrs_1/imports/hw2_code/vga_maze.xdc:40]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/constrs_1/imports/hw2_code/vga_maze.xdc:43]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/constrs_1/imports/hw2_code/vga_maze.xdc:46]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/constrs_1/imports/hw2_code/vga_maze.xdc:49]
+Finished Parsing XDC File [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/constrs_1/imports/hw2_code/vga_maze.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/constrs_1/imports/hw2_code/vga_maze.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_maze_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_maze_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1866.344 ; gain = 0.000 ; free physical = 1630 ; free virtual = 29877
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1866.344 ; gain = 0.000 ; free physical = 1631 ; free virtual = 29878
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1866.344 ; gain = 0.000 ; free physical = 1631 ; free virtual = 29878
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1866.344 ; gain = 0.000 ; free physical = 1631 ; free virtual = 29878
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1866.344 ; gain = 483.215 ; free physical = 1709 ; free virtual = 29956
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1866.344 ; gain = 483.215 ; free physical = 1709 ; free virtual = 29956
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  /home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  /home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for clk_wiz_25_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1866.344 ; gain = 483.215 ; free physical = 1709 ; free virtual = 29956
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "hcnt_clr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hs_clr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hs_set" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1866.344 ; gain = 483.215 ; free physical = 1700 ; free virtual = 29948
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module vga_frame 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "vs/hcnt_clr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vs/hs_set" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vs/hs_clr" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1866.344 ; gain = 483.215 ; free physical = 1690 ; free virtual = 29939
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_25_inst/clk_out1' to pin 'clk_wiz_25_inst/bbstub_clk_out1/O'
+WARNING: [Synth 8-565] redefining clock 'clk'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1866.344 ; gain = 483.215 ; free physical = 1564 ; free virtual = 29812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1866.344 ; gain = 483.215 ; free physical = 1562 ; free virtual = 29810
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1866.344 ; gain = 483.215 ; free physical = 1562 ; free virtual = 29810
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1866.344 ; gain = 483.215 ; free physical = 1562 ; free virtual = 29810
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1866.344 ; gain = 483.215 ; free physical = 1562 ; free virtual = 29810
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1866.344 ; gain = 483.215 ; free physical = 1562 ; free virtual = 29810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1866.344 ; gain = 483.215 ; free physical = 1562 ; free virtual = 29810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1866.344 ; gain = 483.215 ; free physical = 1562 ; free virtual = 29810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1866.344 ; gain = 483.215 ; free physical = 1562 ; free virtual = 29810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |LUT1      |     4|
+|3     |LUT2      |     1|
+|4     |LUT3      |     6|
+|5     |LUT4      |     5|
+|6     |LUT5      |     9|
+|7     |LUT6      |    14|
+|8     |FDCE      |    23|
+|9     |FDRE      |     3|
+|10    |IBUF      |     1|
+|11    |OBUF      |    14|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------+----------+------+
+|      |Instance |Module    |Cells |
++------+---------+----------+------+
+|1     |top      |          |    82|
+|2     |  vf     |vga_frame |     3|
+|3     |  vs     |vga_sync  |    62|
++------+---------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1866.344 ; gain = 483.215 ; free physical = 1562 ; free virtual = 29810
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1866.344 ; gain = 111.676 ; free physical = 1618 ; free virtual = 29867
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1866.344 ; gain = 483.215 ; free physical = 1618 ; free virtual = 29867
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1866.344 ; gain = 0.000 ; free physical = 1557 ; free virtual = 29805
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1866.344 ; gain = 483.289 ; free physical = 1611 ; free virtual = 29859
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1866.344 ; gain = 0.000 ; free physical = 1611 ; free virtual = 29859
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.runs/synth_1/vga_maze_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vga_maze_top_utilization_synth.rpt -pb vga_maze_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  9 12:51:56 2021...

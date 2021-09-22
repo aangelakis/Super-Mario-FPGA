@@ -1,0 +1,21 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto fc1ea5c80b534022b58fd0cf3a6b154e --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot vga_tb_behav xil_defaultlib.vga_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'addr' [/home/carv/Documents/Vivado_Projects/hy220_ex03_csd4334/hy220_ex03_csd4334.srcs/sources_1/imports/lab2_code/vga_frame.sv:142]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'addr' [/home/carv/Documents/Vivado_Projects/hy220_ex03_csd4334/hy220_ex03_csd4334.srcs/sources_1/imports/lab2_code/vga_frame.sv:158]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'addr' [/home/carv/Documents/Vivado_Projects/hy220_ex03_csd4334/hy220_ex03_csd4334.srcs/sources_1/imports/lab2_code/vga_frame.sv:170]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.vga_sync
+Compiling module xil_defaultlib.rom(file="/home/carv/Documents/V...
+Compiling module xil_defaultlib.rom(size=256,file="/home/carv/Do...
+Compiling module xil_defaultlib.rom(size=256,file="/home/carv/Do...
+Compiling module xil_defaultlib.vga_frame
+Compiling module xil_defaultlib.vga_maze_top
+Compiling module xil_defaultlib.vga_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot vga_tb_behav

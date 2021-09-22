@@ -1,0 +1,9 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/imports/hw2_code/vga_frame.sv,1625740797,systemVerilog,,/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/imports/hw2_code/vga_maze_top.sv,,vga_frame,,,../../../../hy220_ex2_csd4334.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/imports/hw2_code/vga_maze_top.sv,1625823101,systemVerilog,,/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/imports/vga_sync/vga_sync.sv,,vga_maze_top,,,../../../../hy220_ex2_csd4334.srcs/sources_1/ip/clk_wiz_0,,,,,
+/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/imports/hw2_code/vga_tb.sv,1572177557,systemVerilog,,,,vga_tb,,,,,,,,
+/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/imports/vga_sync/vga_sync.sv,1625824030,systemVerilog,,/home/carv/Documents/Vivado_Projects/hy220_ex2_csd4334/hy220_ex2_csd4334.srcs/sources_1/imports/hw2_code/vga_tb.sv,,vga_sync,,,../../../../hy220_ex2_csd4334.srcs/sources_1/ip/clk_wiz_0,,,,,
