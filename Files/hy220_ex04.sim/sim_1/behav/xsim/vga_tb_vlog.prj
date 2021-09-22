@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../hy220_ex04_csd4334.srcs/sources_1/ip/clk_wiz_0_1" \
+"../../../../hy220_ex04_csd4334.srcs/sources_1/imports/yes/debouncer.sv" \
+"../../../../hy220_ex04_csd4334.srcs/sources_1/imports/yes/maze_controller.sv" \
+"../../../../hy220_ex04_csd4334.srcs/sources_1/imports/yes/rom.sv" \
+"../../../../hy220_ex04_csd4334.srcs/sources_1/imports/yes/rom_dp.sv" \
+"../../../../hy220_ex04_csd4334.srcs/sources_1/imports/yes/vga_frame.sv" \
+"../../../../hy220_ex04_csd4334.srcs/sources_1/imports/yes/vga_maze_top.sv" \
+"../../../../hy220_ex04_csd4334.srcs/sources_1/imports/yes/vga_sync.sv" \
+"../../../../hy220_ex04_csd4334.srcs/sim_1/imports/yes/vga_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

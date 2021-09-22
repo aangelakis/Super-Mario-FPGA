@@ -1,0 +1,82 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Fri Jul  9 16:17:41 2021
+| Host         : moe running 64-bit Ubuntu 18.04.5 LTS
+| Command      : report_control_sets -verbose -file vga_maze_top_control_sets_placed.rpt
+| Design       : vga_maze_top
+| Device       : xc7z020
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    53 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            1 |
+|     10 |            1 |
+|     11 |            1 |
+|     12 |            3 |
+|    16+ |            6 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              37 |           14 |
+| No           | No                    | Yes                    |              41 |           13 |
+| No           | Yes                   | No                     |              10 |            9 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              26 |            8 |
+| Yes          | Yes                   | No                     |             105 |           24 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+----------------------------+-----------------------------------+------------------+----------------+
+|        Clock Signal       |        Enable Signal       |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
++---------------------------+----------------------------+-----------------------------------+------------------+----------------+
+|  clk_25_mhz/inst/clk_out1 |                            |                                   |                2 |              2 |
+|  clk_25_mhz/inst/clk_out1 | vc/CurrentState[3]_i_1_n_0 | rst_IBUF                          |                2 |              4 |
+|  clk_25_mhz/inst/clk_out1 | vs/vcnt[9]_i_1_n_0         | rst_IBUF                          |                2 |             10 |
+|  vc/E[0]                  |                            |                                   |                4 |             11 |
+|  vc/current_player_brow   |                            |                                   |                3 |             12 |
+|  vc/green_reg[3]_i_1_n_0  |                            |                                   |                5 |             12 |
+|  clk_25_mhz/inst/clk_out1 | vc/tmp_col                 | rst_IBUF                          |                4 |             12 |
+|  clk_25_mhz/inst/clk_out1 | up_dbnc/counter            | up_dbnc/counter[21]_i_1__0_n_0    |                5 |             21 |
+|  clk_25_mhz/inst/clk_out1 | down_dbnc/counter          | down_dbnc/counter[21]_i_1__1_n_0  |                5 |             21 |
+|  clk_25_mhz/inst/clk_out1 | left_dbnc/counter          | left_dbnc/counter[21]_i_1__2_n_0  |                4 |             21 |
+|  clk_25_mhz/inst/clk_out1 | control_dbnc/counter_0     | control_dbnc/counter[7]           |                5 |             21 |
+|  clk_25_mhz/inst/clk_out1 | right_dbnc/counter         | right_dbnc/counter[21]_i_1__3_n_0 |                5 |             21 |
+|  clk_25_mhz/inst/clk_out1 |                            | rst_IBUF                          |               22 |             51 |
++---------------------------+----------------------------+-----------------------------------+------------------+----------------+
+
+
